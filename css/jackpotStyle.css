@@ -1,0 +1,157 @@
+#large_pop {
+  z-index: 1000;
+}
+
+#small_pop {
+  display: flex;
+  visibility: hidden;
+}
+
+/*jackpot specific*/
+
+.jackpotcontainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#scoreHolder {
+  min-height: 120px;
+}
+
+.slot-machine {
+  margin: auto;
+  position: relative;
+}
+
+#wheels {
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+  background: violet;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 5px -3px 10px 10px rgba(0, 0, 0, 0.4),
+    inset 5px 0px 8px 5px rgba(47, 31, 0, 0.7);
+}
+
+.wheel {
+  width: 150px;
+  height: 320px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.result-0 {
+  background-image: url("../images/7.png");
+}
+
+.result-1 {
+  background-image: url("../images/r.png");
+}
+
+.result-2 {
+  background-image: url("../images/pikachu.png");
+}
+
+.result-3 {
+  background-image: url("../images/psyduck.png");
+}
+
+.result-4 {
+  background-image: url("../images/magnet.png");
+}
+
+.result-5 {
+  background-image: url("../images/shell.png");
+}
+
+.result-6 {
+  background-image: url("../images/pokeball.png");
+}
+
+.spinning {
+  background-image: url("../images/spinning.gif");
+}
+.user-input {
+  transform: rotateX(27deg) scaleY(1.075);
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  min-height: 100px;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 0 0 15px 15px;
+  transform-origin: top;
+  background: rgb(196, 99, 196);
+  box-shadow: inset 8px 5px 20px 5px rgba(44, 29, 0, 0.6),
+    10px -5px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.lever {
+  text-transform: uppercase;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: limegreen;
+  box-shadow: 2px -1px 5px 5px rgba(0, 0, 0, 0.4),
+    inset 2px 0px 5px 3px rgba(47, 31, 0, 0.7);
+  outline: none;
+}
+.lever:hover {
+  background-color: lime;
+}
+
+#quit {
+  background-color: rgb(201, 0, 0);
+}
+#quit:hover {
+  background-color: red;
+}
+
+#overlay {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#saveScore {
+  padding: 5px;
+  visibility: hidden;
+}
+
+#playerName {
+  padding: 5px;
+  visibility: hidden;
+}
+
+#SaveNameScore {
+  padding: 5px;
+  visibility: hidden;
+}
+
+#scoreSaveMsg {
+  visibility: hidden;
+}
+
+/*jackpot above*/
+/* Adaptions for mobile */
+
+@media (max-width: 576px) {
+  .wheel {
+    width: 90px;
+    height: 160px;
+  }
+
+  #mobile-menu-leaderbord {
+    font-weight: bold;
+  }
+  #mobile-menu-games {
+    font-weight: bold;
+  }
+}
