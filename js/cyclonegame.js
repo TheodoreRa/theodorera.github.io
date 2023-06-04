@@ -12,12 +12,6 @@ setTimeout(() => {
   clearInterval(blinkingNeons);
 }, 100000);
 
-/**        START OF EXTRA CODE TO STYLE BULBS        */
-/**
- * You don't have to care about this fn unless you want to
- * @param {NodeList} nodes the list of elements to be arranged in a circle
- * @return {void}
- */
 const arrangeBulbsInACircle = (nodes) => {
   const radius = "12em",
     start = -90,
@@ -225,7 +219,7 @@ function gameOver() {
   sessionStorage.setItem("score", "0");
   overLay.style.visibility = "visible";
   gameResultTitile.textContent = "Game Over";
-  gameResultScore.textContent = `Your score hit the rock bottom, start over!`;
+  gameResultScore.textContent = `Your score hit rock bottom, start over!`;
   sessionStorage.setItem("blinkspeed", "150");
 }
 
