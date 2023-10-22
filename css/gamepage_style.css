@@ -308,7 +308,7 @@ a {
 
 /* -------- Here ends the button styles -----------*/
 
-/* -----Popup windows stlyes: small for results and large for instructions ------ */
+/* -----Popup windows styles: small for results and large for instructions ------ */
 .popup_base {
   background-color: var(--primary-color-3);
   border-radius: 25px;
